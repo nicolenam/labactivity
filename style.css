@@ -37,10 +37,6 @@ img {
   height: auto;
 }
 
-button {
-  width: 300px;
-}
-
 /* Layout */
 
 .wrapper {
@@ -71,7 +67,7 @@ button {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 24px;
+  font-size: 22.5px;
   order: 1;
 }
 
@@ -82,9 +78,8 @@ button {
 }
 
 .actions li {
-  display: flex-end;
+  display: flex;`
   flex-direction: column;
-  align-items: stretch;
   margin-bottom: 18px;
 }
 
@@ -103,6 +98,7 @@ button {
   background-color: #1098c8;
   border-color: #1098c8;
   color: #fff;
+  border-right-width: 5px;
 }
 
 .cta i {
@@ -114,17 +110,20 @@ button {
   text-align: center;
 }
 
-
-
 /* Breakpoints */
 
 /* Add your breakpoints here... */
 @media screen and (min-width: 480px) {
-  body {
+  .actions {
+    display: inline-flex;
+    justify-content: space-evenly;
   }
 }
 
 @media screen and (min-width: 720px) {
-  body {
+  .content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
   }
 }
